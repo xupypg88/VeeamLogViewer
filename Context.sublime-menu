@@ -1,0 +1,7 @@
+[   
+    {
+    "id" : "Test_EXEC",
+    "caption" : "Test Exec",
+    "command": "Testexec" 
+    }
+]
