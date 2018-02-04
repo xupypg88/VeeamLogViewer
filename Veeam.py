@@ -8,5 +8,7 @@ class TestexecCommand(sublime_plugin.TextCommand):
 
 class NewwinCommand(sublime_plugin.WindowCommand):
 	def run(self):
-		self.window.new_file()
+		id_new = self.window.new_file()
+		viewv = self.window.active_view()
+		viewv.run_command('testexec')
 
