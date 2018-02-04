@@ -1,7 +1,7 @@
 [   
     {
-    "id" : "Test_EXEC",
+    "id" : "Testexec",
     "caption" : "Test Exec",
-    "command": "Testexec" 
-    }
+    "command": "testexec" 
+    },
 ]
