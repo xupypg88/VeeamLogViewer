@@ -1,7 +1,19 @@
-[   
+
+[
     {
-    "id" : "Testexec",
-    "caption" : "Test Exec",
-    "command": "testexec" 
-    },
+        "caption" : "Veeam Logs",
+        "children":
+            [   
+                {
+                "id" : "Testexec",
+                "caption" : "Test Exec",
+                "command": "testexec" 
+                },
+                {
+                "id" : "WinNew",
+                "caption" : "new tab",
+                "command": "newwin" 
+                },
+            ]
+    }
 ]
