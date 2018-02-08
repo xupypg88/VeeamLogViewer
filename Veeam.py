@@ -26,7 +26,8 @@ class NewwinCommand(sublime_plugin.WindowCommand):
 				if v.full_line(ln) not in regs:
 				    regs.append(v.full_line(ln))
 
-
+		regs.sort()
+		
 		buffa=[]		
 		for ln in regs:
 			buffa.append(v.substr(ln))
