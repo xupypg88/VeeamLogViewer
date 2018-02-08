@@ -7,7 +7,7 @@ class TestexecCommand(sublime_plugin.TextCommand):
 		currvw = self.view
 		texta=''
 		for line in lines:
-			texta += line + '\n'
+			texta += line
 		self.view.insert(edit, 0, texta)
 
 class TextgetCommand(sublime_plugin.TextCommand):
@@ -20,11 +20,16 @@ class NewwinCommand(sublime_plugin.WindowCommand):
 
 		v = self.window.active_view()
 
-		buffa=[]		
+		regs=[]
 		for ln in v.sel():
+			regs.append(v.full_line(ln))
+
+		buffa=[]		
+		for ln in regs:
 			buffa.append(v.substr(ln))
 
 		self.window.new_file()
 		viewv = self.window.active_view()
 		viewv.run_command('testexec', { "lines" : buffa })
+		viewv.set_syntax_file('Packages/VeeamLogViewer/veeam-logs.tmLanguage')
 

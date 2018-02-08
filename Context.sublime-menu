@@ -5,13 +5,8 @@
         "children":
             [   
                 {
-                "id" : "Testexec",
-                "caption" : "Test Exec",
-                "command": "testexec" 
-                },
-                {
                 "id" : "WinNew",
-                "caption" : "new tab",
+                "caption" : "Sel in Tab",
                 "command": "newwin" 
                 },
             ]
