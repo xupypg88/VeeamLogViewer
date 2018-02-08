@@ -6,7 +6,7 @@
             [   
                 {
                 "id" : "WinNew",
-                "caption" : "Sel in Tab",
+                "caption" : "Find to Tab",
                 "command": "newwin" 
                 },
             ]

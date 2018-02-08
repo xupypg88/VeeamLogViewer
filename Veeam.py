@@ -21,13 +21,17 @@ class NewwinCommand(sublime_plugin.WindowCommand):
 		v = self.window.active_view()
 
 		regs=[]
-		for ln in v.sel():
-			regs.append(v.full_line(ln))
+		for pattern in v.sel():
+			for ln in v.find_all(v.substr(pattern),sublime.LITERAL):
+				if v.full_line(ln) not in regs:
+				    regs.append(v.full_line(ln))
+
 
 		buffa=[]		
 		for ln in regs:
 			buffa.append(v.substr(ln))
 
+		
 		self.window.new_file()
 		viewv = self.window.active_view()
 		viewv.run_command('testexec', { "lines" : buffa })
