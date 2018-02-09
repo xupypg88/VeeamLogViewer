@@ -9,6 +9,11 @@
                 "caption" : "Find to Tab",
                 "command": "newwin" 
                 },
+                {
+                "id" : "PopNew",
+                "caption" : "Pop up test",
+                "command": "showpop" 
+                },
             ]
     }
 ]

@@ -15,6 +15,13 @@ class TextgetCommand(sublime_plugin.TextCommand):
 		currvw = self.view
 		return currvw.substr(currvw.sel()[0])
 
+
+class ShowpopCommand(sublime_plugin.TextCommand):
+	def run(self, edit):
+		self.view.show_popup('<html>123456<a href="ya.ru">YA</a><br>21313112</html>')
+		return
+
+
 class NewwinCommand(sublime_plugin.WindowCommand):
 	def run(self):
 
@@ -27,7 +34,7 @@ class NewwinCommand(sublime_plugin.WindowCommand):
 				    regs.append(v.full_line(ln))
 
 		regs.sort()
-		
+
 		buffa=[]		
 		for ln in regs:
 			buffa.append(v.substr(ln))
