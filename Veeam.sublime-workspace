@@ -1,0 +1,271 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/Mike/Documents/cases/2018-01-18T113039_VeeamBackupLogs/aww764p01.gg.gauselmann.com/Backup/SureBackup_Job_Backuptest/Job.SureBackup_Job_Backuptest.log",
+			"settings":
+			{
+				"buffer_size": 242066,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Veeam.py",
+			"settings":
+			{
+				"buffer_size": 1073,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 272.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Advanced Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"view.run_command('testexec')",
+			"adsad",
+			"view.run_command('example')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Mike/AppData/Local/Temp/Rar$DIa10568.29682/Job.VMWARE_DC.Backup.log",
+		"/C/Users/Mike/AppData/Local/Temp/Rar$DIa10568.36640/Job.Infrastructure_rescan.log",
+		"/C/Users/Mike/AppData/Local/Temp/Rar$DIa10568.37718/Console_CSE2K_administrator_localhost.log",
+		"/C/Users/Mike/Documents/cases/2018-01-18T113039_VeeamBackupLogs/aww764p01.gg.gauselmann.com/Backup/SureBackup_Job_Backuptest/Job.SureBackup_Job_Backuptest.log",
+		"/C/Users/Mike/AppData/Roaming/Sublime Text 3/Packages/VeeamLogViewer/Context.sublime-menu",
+		"/C/Users/Mike/AppData/Local/Temp/Rar$DIa13576.27896/CatalogReplicationJob.log",
+		"/C/Users/Mike/AppData/Local/Temp/Rar$DIa13576.19173/Job.Grading_Server.Replica.log",
+		"/C/Users/Mike/AppData/Roaming/Sublime Text 3/Packages/VeeamLogViewer/Veeam.py",
+		"/C/Users/Mike/AppData/Local/Temp/Rar$DIa13576.4101/Svc.VeeamBackup.log",
+		"/C/Users/Mike/Desktop/case/SRVVEEAM1.ar-servicos.pt/Backup/Linux/Job.Linux.Backup.log",
+		"/C/Users/Mike/AppData/Roaming/Sublime Text 3/Packages/settings.py",
+		"/C/Users/Mike/AppData/Local/Temp/Rar$DIa9840.31632/Context.sublime-menu",
+		"/C/Users/Mike/AppData/Local/Temp/Rar$DIa10172.22217/XML-Processing-Instruction.sublime-snippet",
+		"/C/Users/Mike/AppData/Local/Temp/Rar$DIa12232.48174/package-metadata.json",
+		"/C/Users/Mike/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"//172.17.14.57/Backup/SureBackup1/Job.SureBackup1.log",
+		"//172.17.14.57/Backup/SureBackup_Job_1/Job.SureBackup_Job_1.log",
+		"/C/Users/Mike/Documents/cases/2018-01-18T113039_VeeamBackupLogs/aww764p01.gg.gauselmann.com/Backup/SureBackup_Job_Backuptest/Task.adpnasp02.c4e67a6a-022b-4309-880c-485f910dd1f0.log"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mws-esxi-01.monkswalk.local",
+			"regs",
+			"[proxyDe",
+			"open"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Mike/Documents/cases/2018-01-18T113039_VeeamBackupLogs/aww764p01.gg.gauselmann.com/Backup/SureBackup_Job_Backuptest/Job.SureBackup_Job_Backuptest.log",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 242066,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/VeeamLogViewer/veeam-logs.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Veeam.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1073,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Veeam.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
