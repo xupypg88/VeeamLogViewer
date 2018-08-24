@@ -12,6 +12,7 @@ patterns:
     '3': {name: invalid}
     '4': {name: invalid}
 
+
 - comment: errors
   name: invalid
   match: WARN\||ERR \||>>  \||Cannot create folder|GuestLogin|Failed to enumerate
