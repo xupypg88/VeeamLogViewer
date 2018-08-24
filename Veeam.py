@@ -7,7 +7,7 @@ import sys
 
 
 # 
-buff='kjhj'
+buff=''
 class TestexecCommand(sublime_plugin.TextCommand):
 	def run(self, edit, lines):
 		currvw = self.view
