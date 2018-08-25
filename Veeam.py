@@ -10,6 +10,15 @@ class TextgetCommand(sublime_plugin.TextCommand):
         return currvw.substr(currvw.sel()[0])
 
 
+class TestexecCommand(sublime_plugin.TextCommand):
+	def run(self, edit, lines):
+		currvw = self.view
+		texta=''
+		for line in lines:
+			texta += line
+		self.view.insert(edit, self.view.size(), texta)
+
+
 class ShowpopCommand(sublime_plugin.TextCommand):
     def run(self, edit, lines):
         texta = ''
@@ -34,13 +43,17 @@ class NewwinCommand(sublime_plugin.WindowCommand):
             buffa.append(v.substr(ln))
         self.window.new_file()
         viewv = self.window.active_view()
+        viewv.set_name('Found to Tab')
         viewv.run_command('testexec', {"lines": buffa})
         viewv.set_syntax_file('Packages/VeeamLogViewer/veeam-logs.tmLanguage')
 
 
 class PutnewwinCommand(sublime_plugin.WindowCommand):
     def run(self):
-        viewv = None
+        
+        #Pycharm says view should be added to avoid to be invoked before definition
+        #but in this case I cannot make it to be not in locals
+
         v = self.window.active_view()
         for viewitem in self.window.views():
             if viewitem.name() == 'dumper':
