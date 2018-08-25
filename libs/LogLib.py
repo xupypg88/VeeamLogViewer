@@ -3,14 +3,6 @@ from time import mktime
 import platform
 
 
-def get_OS_slash():
-    slsh = '/'
-    if 'Windows' in platform.system():
-        slsh = '\\'
-    return slsh
-
-slsh = get_OS_slash()
-
 class LogLine:
     """
     LogLine class gets log lines as is and parses it into timestamp + type + message
@@ -121,8 +113,16 @@ class Log:
 
 class LogImporter:
 
-    def __init__(self):
-        return
+    @staticmethod
+    def get_os_slash() -> str:
+        """
+        Checks if \ or / should be used for current platform
+        :return:Slash char for path of system platform (String)
+        """
+        slsh = '/'
+        if 'Windows' in platform.system():
+            slsh = '\\'
+        return slsh
 
 
     @staticmethod
@@ -132,6 +132,8 @@ class LogImporter:
         :param path: current file path (String)
         :return: Backup folder full path without slash at the end (String)
         """
+        slsh = LogImporter.get_os_slash()
+
         offset = path.find(slsh + 'Backup')
         if offset < 0:
             return ''
