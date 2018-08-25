@@ -1,4 +1,4 @@
-import os,sys
+#import os,sys
 import datetime
 from time import mktime
 
@@ -110,7 +110,7 @@ class LogImporter:
             try:
                 fd = open(path, 'r')
             except:
-                print "Log file error!"
+                print("Log file error!")
 
             loglines = []
 
