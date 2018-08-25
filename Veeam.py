@@ -11,12 +11,11 @@ class TextgetCommand(sublime_plugin.TextCommand):
 
 
 class TestexecCommand(sublime_plugin.TextCommand):
-	def run(self, edit, lines):
-		currvw = self.view
-		texta=''
-		for line in lines:
-			texta += line
-		self.view.insert(edit, self.view.size(), texta)
+    def run(self, edit, lines):
+        texta = ''
+        for line in lines:
+            texta += line
+        self.view.insert(edit, self.view.size(), texta)
 
 
 class ShowpopCommand(sublime_plugin.TextCommand):
@@ -50,10 +49,10 @@ class NewwinCommand(sublime_plugin.WindowCommand):
 
 class PutnewwinCommand(sublime_plugin.WindowCommand):
     def run(self):
-        
-        #Pycharm says view should be added to avoid to be invoked before definition
-        #but in this case I cannot make it to be not in locals
-
+        """
+        Pycharm says view should be added to avoid to be invoked before definition
+        but in this case I cannot make it to be not in locals
+        """
         v = self.window.active_view()
         for viewitem in self.window.views():
             if viewitem.name() == 'dumper':
