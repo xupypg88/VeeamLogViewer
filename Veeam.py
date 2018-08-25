@@ -1,8 +1,6 @@
 import sublime
 import sublime_plugin
 
-buff = ''
-
 
 class TextgetCommand(sublime_plugin.TextCommand):
     def run(self):

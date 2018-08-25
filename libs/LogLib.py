@@ -1,13 +1,20 @@
 import datetime
 from time import mktime
+import platform
 
-"""
-LogLine class gets log lines as is and parses it into timestamp + type + message
-"""
 
+def get_OS_slash():
+    slsh = '/'
+    if 'Windows' in platform.system():
+        slsh = '\\'
+    return slsh
+
+slsh = get_OS_slash()
 
 class LogLine:
-
+    """
+    LogLine class gets log lines as is and parses it into timestamp + type + message
+    """
     def __init__(self, text_line):
         text = text_line[:-1].split(' ')
         if text_line[0] == '[':
@@ -41,7 +48,7 @@ class LogLine:
                ' | ' + self.message
 
     @staticmethod
-    def time2int(date, time):
+    def time2int(date, time) -> int:
         log_date = datetime.datetime(
                                     int(date.split('.')[2]),
                                     int(date.split('.')[1]),
@@ -116,6 +123,20 @@ class LogImporter:
 
     def __init__(self):
         return
+
+
+    @staticmethod
+    def find_root_path(path) -> str:
+        """
+        Finds Backup folder path to define root folder for bundle
+        :param path: current file path (String)
+        :return: Backup folder full path without slash at the end (String)
+        """
+        offset = path.find(slsh + 'Backup')
+        if offset < 0:
+            return ''
+        offset += len(str(slsh + 'Backup'))
+        return path[:offset]
 
     @staticmethod
     def openfile(path):
