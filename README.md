@@ -1,2 +1,2 @@
 # VeeamLogViewer
-Sublime Text 3 Plugin for Easier Viewing of logs of Veeam 
+Sublime Text 3 Package for analazing and reviewing logs of Veeam 
