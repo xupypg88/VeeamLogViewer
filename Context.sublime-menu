@@ -15,24 +15,9 @@
                 "command": "putnewwin" 
                 },
                 {
-                "id" : "WinNewJobList",
-                "caption" : "Jobs stats",
-                "command": "jobstats" 
-                },
-                {
-                "id" : "WinNewJobstat",
-                "caption" : "This Job stats",
-                "command": "jobstat" 
-                },
-                {
                 "id" : "PositionTest",
                 "caption" : "position",
                 "command": "postiontest" 
-                },
-                {
-                "id" : "PopNew",
-                "caption" : "Pop up test",
-                "command": "testexec" 
                 },
             ]
     }
