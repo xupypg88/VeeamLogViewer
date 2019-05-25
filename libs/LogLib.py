@@ -47,7 +47,7 @@ class LogLine:
 
 class Log:
 
-    def __init__(self, lines, entry):
+    def __init__(self, lines, entry=None):
         self.importLines(lines)
         self.type = 'job'
         self.entry = entry
@@ -110,7 +110,7 @@ class LogImporter:
             try:
                 fd = open(path, 'r')
             except:
-                print("Log file error!")
+                print(   "Log file error!")
 
             loglines = []
 
