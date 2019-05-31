@@ -9,20 +9,15 @@ class JobSession:
         self.data = data
         self.end = end
         self.start = start
+        self.getJobStats()
         return
 
-    def getJobType(self):
-        for line in self.data[0:4]:
-            print(line)
-            if 'START' in line:
-                print(line)
-        jbtype =0
-        return jbtype
-
     def getJobStats(self):
-        stats = { 'jbtype' : self.getJobType()}
+        for line in self.data[0:25]:
+            if 'CmdLineParams' in line:
+                self.jbtype, self.job_id, self.session_id = line.split('[')[1].split(']')[0].split()
 
-        return stats
+        return
 
 class Log:
 
@@ -31,17 +26,20 @@ class Log:
         self.textdata = textdata
         self.cursor = curpos
         # Import job runs
-        self.currsession = self.define_session(textdata)
+        self.sessions = self.define_sessions(textdata)
 
 
     def getGlobalLine(self, session, linenum):
 
-        return session.start + linenum
+        return session.start + linenum + 1
 
-    def define_session(self, lines):
-        for n in range(self.cursor, 0):
-            if "Starting new log" in lines[n] and "=====================" in lines[n - 1]:
-                start_point = n
+    #finds job session under cursor position
+    def pickSession(self, position):
+        for sess in self.sessions:
+            if sess.start < position and sess.end > position:
+                return sess
+        raise Exception("Session is not complete in one file!")
+
 
     """
     returns list of the job runs (lists of text lines)
@@ -53,9 +51,9 @@ class Log:
 
         # returns list of lines[x:y] where x and y are entry points (beginnings for one and endings for others runs)
         # range is used to iterate start_points putting them as pairs one-by-one
-        return [ JobSession([lines[start_points[i]:start_points[i+1]-1]],
+        return [ JobSession(lines[start_points[i]:start_points[i+1]-1],
                             start_points[i],
-                            start_points[i+1-1])
+                            start_points[i+1]-1)
                  for i in range(0, len(start_points)-1) ]
 
 
